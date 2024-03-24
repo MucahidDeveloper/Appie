@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* main styles */
+
+:root {
+  --text-main-color: #0e1133;
+  --text-secondary-color: #fff;
+  --red-color: #ff3e66;
+  --blue-color: #2a6df5;
+  --green-color: #32c36a;
+
+  /* Background Colors */
+  --background-main-color: #eef1f6;
+  --background-light-color: #fff;
+  --background-dark-color: #0e1133;
+
+  /* Pointers Colors
+    --red-pointer-color: var(--red-color);
+    --blue-pointer-color: var(--blue-color);
+    --green-pointer-color: #33c956; */
+
+  /* Font Sizes */
+  --font-hero: 5.4rem;
+  --font-large: 3.2rem;
+  --font-mid: 2.4rem;
+  --font-small: 1.6rem;
+
+  /* Global */
+  --transition: 0.3s ease-in-out all;
+  --max-width: 1120px;
+  --fixed-width: 600px;
+  --fluid-width: 90vw;
+  --nav-height: 6rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  cursor: pointer;
+  color: var(--text-secondary-color);
+  background: var(--red-color);
+  border: transparent;
+  /* letter-spacing: var(--letter-spacing); */
+  padding: 0.375rem 0.75rem;
+  /* box-shadow: var(--shadow-1); */
+  transition: var(--transition);
+  text-transform: capitalize;
+  display: inline-block;
+}
+.btn:hover {
+  background: var(--text-secondary-color);
+  color: var(--red-color);
+}
+
+/* STYLE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  max-width: 120rem;
+  background: var(--background-color);
+  color: var(--text-color);
+  font-weight: 400;
+  line-height: 1.5;
+}
